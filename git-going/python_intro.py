@@ -1,6 +1,7 @@
-# standard 'hello world'
-def hello():
-    print('hello world!')
+"""
+>>> print('hello world!')
+hello world!
+"""
 
 # variable assignment
 a = 1
@@ -17,6 +18,41 @@ a = a ** (1/2) # a = a ^ (1/2) | square root a
 a += 1 # a + 1 = 16 + 1 = 17
 a *= 3 # a * 3 = 17 * 3 = 51
 
+# string declaration
+org_name = "Artificial Intelligence at Ohio University"
+
+# list declaration
+num_list = [2, 4, 5, 8]
+
+# for...in list
+def add_nums(numbers):
+    total = 0
+    for number in numbers:
+        total += number
+    return total
+
+"""
+>>> add_nums(num_list)
+19
+"""
+
+""" looping through a range
+
+>>> for i in range(10):
+...     print(i)
+...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+"""
+
 # simple comment. text on this line after '#' will not be interpreted as code.
 
 """
@@ -31,7 +67,6 @@ def greet(name):
 
 def greet(name):
     print('hello, ' + name + '!')
-
 
 # more string formatting
 def advanced_greet(first_name, last_name):
@@ -62,4 +97,14 @@ Write a function cube(n) that returns n cubed.
 def cube(n):
     return None
 
-print("Result for Q1, should be 8: %s" % cube(2))
+print("Result for Q1, should be 8: %i" % cube(2))
+
+""" PROBLEM 2
+Write a function to compute the factorial of n.
+Recursion is your friend.
+"""
+
+def factorial(n):
+    return None
+
+print ("Result for Q2, should be 120: %i" % factorial(5))
