@@ -7,11 +7,11 @@ import math
 
 x = 3
 y = math.exp(x)
-print("x = %d, e^x = %d") % (x,y)
+print("x = %d, e^x = %d" % (x,y))
 
 x = 0
 y = math.exp(x)
-print("x = %d, e^x = %d") % (x,y)
+print("x = %d, e^x = %d" % (x,y))
 
 '''
 Note that if
