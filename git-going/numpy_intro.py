@@ -73,10 +73,10 @@ S = np.array([[0,1,2],  # 3x3 matrix
 T = np.array([-1,1,0])   # 1x3 row vector
 
 #Grab some scratch paper! Predict what these will be!
-print (s + t)
-print (s * t) #note: this performs elementwise multiplication and
+print (S + T)
+print (S * T) #note: this performs elementwise multiplication and
 #              WILL NOT MULTIPLY MATRICES/VECTORS TOGETHER
-print(sigmoid(t))
+print(sigmoid(T))
 '''
 
 
@@ -87,7 +87,7 @@ FINAL ASSIGNMENT: Calculate and print the elementwise sigmoid of TS
 #UNCOMMENT BELOW
 '''
 sigTS =
-print(sigTS)
+print("Final result: " + str(sigTS))
 '''
 
 '''
