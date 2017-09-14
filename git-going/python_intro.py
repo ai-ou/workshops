@@ -1,21 +1,21 @@
 # standard 'hello world'
-print('hello world!')
-
+def hello():
+    print('hello world!')
 
 # variable assignment
 a = 1
-print(a)
-
 
 # arithmetic
-a = a + 1
-print(a)
+a = a + 1 # a + 1 = 1 + 1 = 2
+a = a * 2 # a * 2 = 2 * 2 = 4
+a = a * a # a * a = 4 * 4 = 16
 
+a = a ** 2 # a = a ^ 2 | square a
+a = a ** (1/2) # a = a ^ (1/2) | square root a
 
-# increment
-a += 1
-print(a)
-
+# increment, multiply by
+a += 1 # a + 1 = 16 + 1 = 17
+a *= 3 # a * 3 = 17 * 3 = 51
 
 # simple comment. text on this line after '#' will not be interpreted as code.
 
@@ -53,4 +53,13 @@ def product_and_quotient(a, b):
     return (a * b, a / b)
 
 product, quotient = product_and_quotient(6, 3)
-print((product, quotient))
+
+
+""" PROBLEM 1
+Write a function cube(n) that returns n cubed.
+"""
+
+def cube(n):
+    return None
+
+print("Result for Q1, should be 8: %s" % cube(2))
