@@ -22,10 +22,10 @@ a *= 3 # a * 3 = 17 * 3 = 51
 org_name = "Artificial Intelligence at Ohio University"
 
 # list declaration
-num_list = [2, 4, 5, 8]
+num_list = [2, 4, 5]
 
 # for...in list
-def add_nums(numbers):
+def add_nums(numbers=[1, 2, 3]):
     total = 0
     for number in numbers:
         total += number
@@ -85,7 +85,7 @@ def add(a, b):
 
 # the power of tuples
 def product_and_quotient(a, b):
-    return (a * b, a / b)
+    return a * b, a / b
 
 product, quotient = product_and_quotient(6, 3)
 
@@ -95,7 +95,7 @@ Write a function cube(n) that returns n cubed.
 """
 
 def cube(n):
-    return None
+    return n
 
 print("Result for Q1, should be 8: %i" % cube(2))
 
@@ -105,6 +105,9 @@ Recursion is your friend.
 """
 
 def factorial(n):
-    return None
+    if n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
 
 print ("Result for Q2, should be 120: %i" % factorial(5))
