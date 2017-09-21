@@ -3,11 +3,11 @@ import math
 
 # Use math.exp() to get y = e^x
 x = 3
-y =
+y =0
 print("x = %d, e^x = %d" % (x,y))
 
 a = 0
-b =
+b =0
 print("x = %d, e^x = %d" % (a,b))
 
 '''
@@ -65,7 +65,7 @@ x =     [4,5,6]     x + 1 =     [4 + 1, 5 + 1, 6 + 1]
 '''
 
 #UNCOMMENT BELOW
-'''
+
 S = np.array([[0,1,2],  # 3x3 matrix
               [2,1,2],
               [2,1,0]])
@@ -77,7 +77,7 @@ print (S + T)
 print (S * T) #note: this performs elementwise multiplication and
 #              WILL NOT MULTIPLY MATRICES/VECTORS TOGETHER
 print(sigmoid(T))
-'''
+
 
 
 
